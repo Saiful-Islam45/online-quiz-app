@@ -162,13 +162,12 @@ choices.forEach(choice =>{
         choice.parentElement.classList.add(classToApply);
         
         setTimeout(()=>{
-        selectedAnswer == currentQuestion.answer? alert("Good Job Baby !!!"):alert("Gorer Dim parse.. Correct Answer : "+currentQuestion.answer)
+        selectedAnswer == currentQuestion.answer? alert("Congratulations!!!"):alert("Sorry!!! Correct Answer : "+currentQuestion.answer)
 
         choice.parentElement.classList.remove(classToApply);
          getNewQuestion();
         },1000);
         
-
     });
     
 });
